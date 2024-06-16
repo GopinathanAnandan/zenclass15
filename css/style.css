@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .table-responsive {
+    width: 780px;
+    margin: 0px auto;
+  
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  
+  }
+  
+  #myTable th {
+    background-color: rgb(66, 133, 233);
+  }
+  
+  #myTable th,
+  #myTable td {
+  
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+    .table-responsive {
+      width: 75%;
+      overflow-x: auto;
+    }
+  }
+  
+  @media all and (min-width:350px) {
+    .pagination {
+      flex-wrap: wrap;
+    }
+  
+    .table {
+      width: 40%;
+  
+    }
+  
+    #myTable th,
+    #myTable td {
+      width: 20%;
+  
+    }
+  
+  }
